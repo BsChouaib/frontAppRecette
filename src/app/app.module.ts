@@ -8,6 +8,7 @@ import { RegisterComponent } from './register/register.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { MyrecipesComponent } from './myrecipes/myrecipes.component';
 import { DetailsRecipeComponent } from './details-recipe/details-recipe.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,11 +17,13 @@ import { DetailsRecipeComponent } from './details-recipe/details-recipe.componen
     RegisterComponent,
     DashboardComponent,
     MyrecipesComponent,
-    DetailsRecipeComponent
+    DetailsRecipeComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
