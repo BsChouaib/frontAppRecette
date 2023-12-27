@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="details-recipe.component.css">
+    <title>Mes Recettes</title>
+</head>
+<body>
+
+    <header>
+        <div class="header-buttons">
+            <div class="profile-info">
+                <img src="../assets/img/icon.jpeg" alt="profil">
+                <span class="username">user name</span>
+            </div>
+            <button class="logout-button"routerLink="/">Déconnexion</button>
+            <button class="accueil-button" routerLink="/dashboard" >Accueil</button>
+            <button class="recipes-button" routerLink="/myrecipes" >Mes Recettes</button>
+    </div>
+</header>
+<div class="search-container">
+    <input type="text" placeholder="Rechercher...">
+    <button class="search-button">
+        <img src="../assets/img/loop-icon.png" alt="Rechercher">
+        Chercher
+    </button>
+</div>
+<main class="main-container">
+    <div class="recipes-container">
+        <div class="recipe" id="name_r" >
+            <label for="span">Nom de la recette:</label>
+                <span class="recipe-info">Recette 1</span>
+                <label for="span">Les ingrédients de la recette:</label>
+                <span class="recipe-info">Les ingrédients de la recette: ...</span>
+                <label for="span">Les instructions de la recette:</label>
+                <span class="recipe-info">Les instructions de la recette: ...</span>
+                <label for="span">Temps de préparation:</label>
+                <span class="recipe-info">Temps de préparation: ...</span>
+                <label for="span">Temps de cuisson::</label>
+                <span class="recipe-info">Temps de cuisson: ...</span>
+                <label for="span">Les difficulte:</label>
+                <span class="recipe-info">Des difficultés?: ...</span>
+            <img class="recipe-info" src="../assets/img/couscous.jpg" alt="image" >
+    </div>
+</div>
+</main>
+</body>
+</html>
